@@ -24,16 +24,18 @@ h3 {
 .main {
   display: flex;
   flex-flow: row;
+  justify-content: center;
 }
 
-.entry-form {
+.journal-form {
   display: flex;
   width: 70%;
   margin: 20px;
   flex-flow: column nowrap;
+  justify-content: center;
 }
 
-.entry-form label{
+.journal-form label{
   margin-top: 40px;
 }
 
@@ -62,7 +64,6 @@ input:focus {
 }
 
 button {
-  float:right;
   padding:8px 12px;
   margin: 50px 0px 0px 0px;
   border:2px solid #5C8BA5;
