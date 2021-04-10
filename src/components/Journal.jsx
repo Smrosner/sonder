@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import JournalForm from './JournalForm.jsx'
 import JournalList from './JournalList.jsx'
+import SonderScore from './SonderScore.jsx'
 
 class Journal extends React.Component {
   constructor(props) {
@@ -40,6 +41,7 @@ class Journal extends React.Component {
     return(
       <div className="main">
         <JournalForm addEntry={this.addEntry} />
+        <SonderScore entries={this.state.entries}/>
         <JournalList entries={this.state.entries} />
       </div>
     )
