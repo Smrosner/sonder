@@ -29,7 +29,8 @@ exports.add = (req, res) => {
       title: doc.title,
       body: doc.body,
       mood: doc.mood,
-      date: doc.createdAt
+      date: doc.createdAt,
+      update: doc.updatedAt
     }
     res.json(entry)})
   .catch(err => res.status(400).json('Error: ' + err));
